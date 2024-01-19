@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
   - name: app-web-mysql
-    image: kodekloud/app-web-mysql:1.0
+    image: ghcr.io/wiktorvip/app-web-mysql:v1
     ports:
     - containerPort: 9080
