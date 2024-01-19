@@ -7,9 +7,9 @@ metadata:
 spec:
   containers:
   - name: app-web-mysql
-    image: kodekloud/app-web-mysql:1.0
+    image: ghcr.io/wiktorvip/app-web-mysql:v1
     ports:
-    - containerPort: 9080
+    - containerPort: 9070
     volumeMounts:
     - name: app-secret-volumes
       mountPath: "/opt/app-secret-volumes"

@@ -9,4 +9,13 @@ spec:
   - name: app-web-mysql
     image: ghcr.io/wiktorvip/app-web-mysql:v1
     ports:
-    - containerPort: 9080
+    - containerPort: 9070
+    env:
+    - name: DB_Host
+      value: "mysql-svc"
+    - name: DB_Database
+      value: "mysql"
+    - name: DB_User
+      value: "root"
+    - name: DB_Password
+      value: "password1"
