@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: app-web-mysql
+spec:
+  selector:
+    name: app-web-mysql
+  type: NodePort
+  ports:
+  - port: 9070
+    targetPort: 9070
+    nodePort: 30070
