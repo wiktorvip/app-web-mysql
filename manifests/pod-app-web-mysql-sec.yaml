@@ -10,14 +10,6 @@ spec:
     image: ghcr.io/wiktorvip/app-web-mysql:v1
     ports:
     - containerPort: 9070
-    volumeMounts:
-    - name: app-secret-volumes
-      mountPath: "/opt/app-secret-volumes"
-      readOnly: true
     envFrom:
       - secretRef:
           name: app-secret
-  volumes:
-    - name: app-secret-volumes
-      secret:
-        secretName: app-secret

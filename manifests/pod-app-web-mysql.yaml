@@ -12,10 +12,10 @@ spec:
     - containerPort: 9070
     env:
     - name: DB_Host
-      value: "mysql-svc"
+      value: "svc-mysql"
     - name: DB_Database
       value: "mysql"
     - name: DB_User
       value: "root"
     - name: DB_Password
-      value: "password1"
+      value: "paswrd"
